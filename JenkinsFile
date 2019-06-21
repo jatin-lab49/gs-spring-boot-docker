@@ -35,7 +35,9 @@ volumes: [
     */
     stage('Build') {
       container('gradle') {
-        sh "sudo gradle build"
+        sh "whoami"
+        sh "sudo -i"
+        sh "gradle build"
       }
     }
   }
