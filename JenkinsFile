@@ -35,7 +35,7 @@ volumes: [
     */
     stage('Build') {
       container('gradle') {
-        sh "gradle build"
+        sh "sudo gradle build"
       }
     }
   }
